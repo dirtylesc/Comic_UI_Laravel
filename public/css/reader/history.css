@@ -1,0 +1,49 @@
+.content {
+    margin-top: 0 !important;
+    background-color: #f6f7fc;
+    padding-top: 40px;
+    border-bottom: 1px solid #dcdce2;
+}
+
+._tab a {
+    color: var(--bg_bullet);
+    transition: .3s ease;
+}
+
+._tab a.active {
+    color: var(--c_black);
+}
+
+._tab a:hover {
+    color: var(--c_black);
+}
+
+._line {
+    left: 54%;
+    bottom: -1px;
+}
+
+.a_scale {
+    height: 186px;
+    width: 140px;
+}
+
+.info {
+    width: 812px;
+}
+
+.info .star i {
+    color: var(--c_star);
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: none;
+}
+
+.read_now b {
+    height: 100%;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 16px;
+}

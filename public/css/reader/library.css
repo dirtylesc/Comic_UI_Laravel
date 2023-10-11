@@ -1,0 +1,43 @@
+.content {
+    margin-top: 0 !important;
+    background-color: #f6f7fc;
+    padding-top: 40px;
+    border-bottom: 1px solid #dcdce2;
+}
+
+a:hover {
+    color: var(--c_black);
+}
+
+._tab a {
+    color: var(--bg_bullet);
+    transition: .3s ease;
+}
+
+._tab a.active {
+    color: var(--c_black);
+}
+
+._tab a:hover {
+    color: var(--c_black);
+}
+
+._line {
+    bottom: -1px;
+}
+
+.a_scale,
+#comic #name {
+    width: 140px;
+}
+
+._dot {
+    content: "";
+    position: absolute;
+    top: 200px;
+    left: -7.5%;
+    background-color: var(--btn_color);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}

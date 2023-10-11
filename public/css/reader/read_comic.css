@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", "Roboto", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  color: #000 !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw900 {
+  font-weight: 900;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.cl6 {
+  color: rgba(18, 18, 23, 0.6);
+}
+
+.cl9 {
+  color: rgba(18, 18, 23, 0.9);
+}
+
+.top {
+  display: flex;
+  padding: 10px 20px 5px 20px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+.top .right,
+.top .left {
+  display: flex;
+}
+
+.top .left {
+  width: 70%;
+}
+
+.top .right {
+  width: 30%;
+}
+
+.top .left .logo {
+  height: 100%;
+  padding: 0 5px;
+  border: 1px solid #7c7c7c;
+  border-radius: 5px;
+}
+
+.top .left .title {
+  padding: 10px;
+}
+
+.top .library_forum {
+  display: flex;
+  margin: auto 0;
+  margin-left: 80px;
+}
+
+.library_forum.color a p {
+  color: #B1C2CC !important;
+}
+
+.library_forum.color_3 a p {
+  color: #bfe7ff !important;
+}
+
+.top .library_forum a {
+  border: none;
+  font-size: 16px;
+  color: rgba(18, 18, 23, 0.6);
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.top .library_forum a:first-child {
+  margin-right: 20px;
+}
+
+.top .library_forum a:hover {
+  color: #3b66f5;
+}
+
+.middle {
+  width: 100%;
+  display: flex;
+  padding-top: 4rem;
+}
+
+.middle .reading_detail {
+  width: 97.6%;
+  background-color: rgb(244, 244, 244);
+}
+
+.middle .reading_detail .page-chapter:first-child {
+  margin-top: 0;
+}
+
+.middle .reading_detail .page-chapter {
+  text-align: center;
+  margin-top: -6px;
+}
+
+.middle .mid_function {
+  width: 3.25%;
+  position: fixed;
+  right: 0;
+  background-color: #212531;
+  height: 100%;
+  padding-top: 15%;
+}
+
+.middle .mid_function .function {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle .mid_function .function i {
+  width: 50px;
+  font-size: 20px;
+  border-top: 1px solid black;
+  padding: 15px 0;
+  color: #7c7c7c;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.middle .mid_function .function i:last-child {
+  border-bottom: 1px solid black;
+}
+
+.middle .mid_function .function i:hover {
+  background-color: #3b66f5;
+  color: white;
+}
+
+.middle .mid_function .bg_function {
+  width: 360px;
+  height: 91%;
+  top: 7.7%;
+  position: fixed;
+  right: 70px;
+  background-color: #1F2129;
+  border-radius: 11px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.middle .mid_function .bg_function.holdup {
+  visibility: visible;
+  opacity: 1;
+}
+
+.middle .mid_function .bg_function .title {
+  padding: 20px;
+}
+
+.middle .mid_function .bg_function h1 {
+  color: #C0C2CC;
+  font-size: 29px;
+}
+
+.middle .mid_function .bg_function p {
+  color: #76848F;
+  margin-top: 10px;
+}
+
+.middle .mid_function .bg_function .bg_color {
+  margin-top: 15px;
+}
+
+.middle .mid_function .bg_function .bg_color span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.middle .mid_function .bg_function .bg_color #s1 {
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.middle .mid_function .bg_function .bg_color #s2 {
+  background-color: #191B1C;
+  border: 1px solid;
+}
+
+.middle .mid_function .bg_function .bg_color #s3 {
+  background-color: #76848F;
+}
+
+
+/* ////// */
+.middle .mid_function .chapter_function {
+  width: 360px;
+  height: 91%;
+  top: 7.7%;
+  position: fixed;
+  right: 70px;
+  background-color: white;
+  border-radius: 11px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.middle .mid_function .chapter_function.holdup {
+  visibility: visible;
+  opacity: 1;
+}
+
+.middle .mid_function .chapter_function .title {
+  padding: 20px;
+}
+
+.middle .mid_function .chapter_function h1 {
+  color: black;
+  font-size: 29px;
+}
+
+.middle .mid_function .chapter_function p {
+  color: #76848F;
+  margin-top: 10px;
+}
+
+.middle .mid_function .chapter_function .chapters {
+  margin-top: 15px;
+}
+
+.middle .mid_function .chapter_function .chapters a {}
+
+.middle .mid_function .chapter_function p,
+.chapters {
+  margin-left: 5px;
+}
+
+.chapters strong {
+  font-weight: 600;
+}
+
+.chapters a {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 24px;
+  position: relative;
+  display: block;
+}
+
+.chapters a:hover>strong {
+  text-decoration: underline;
+}
+
+.chapters span {
+  margin-right: 30px;
+}
+
+.now_ch {
+  color: #3b66f5 !important;
+}

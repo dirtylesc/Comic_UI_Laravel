@@ -1,0 +1,127 @@
+.nothing- {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    opacity: 0;
+    transition: .3s;
+    visibility: hidden;
+}
+
+.list_content label.clicked_radio>strong {
+    color: #3b66f5;
+    background-color: #d0deff;
+}
+
+.time a,
+.time form {
+    width: 360px;
+}
+
+.time a {
+    padding: 7px 12px;
+    border-radius: 20px;
+    transition: .2s all;
+}
+
+.time a i {
+    transition: .2s all;
+}
+
+.time a._on i {
+    transform: rotate(180deg);
+}
+
+.time a:hover {
+    color: var(--btn_color);
+    border-color: var(--btn_color) !important;
+}
+
+.time a:hover span {
+    text-decoration: underline;
+}
+
+.time form {
+    display: none;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(59 102 245 / 6%), 0 2px 4px rgb(31 33 41 / 8%), 0 2px 10px rgb(31 33 41 / 8%);
+}
+
+.time a._on+form {
+    display: flex;
+}
+
+.time form fieldset input:checked+i {
+    border: 3px solid var(--btn_color);
+    background-color: var(--btn_color);
+}
+
+.time form fieldset i {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #e5e5e5;
+    border-radius: 50%;
+    font-size: 13px;
+    color: #fff;
+}
+
+.time form fieldset i::before {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 48em) {
+    #side-middle h2 {
+        display: block;
+    }
+
+    #side-middle {
+        display: block;
+    }
+
+    #side-middle .list_checked {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 32%;
+        background-color: white;
+        padding: 8rem 3rem;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: .3s all;
+    }
+
+    #side-middle.hold_right {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #side-middle.hold_right>.list_checked {
+        visibility: visible;
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    #side-middle.hold_right>.nothing {
+        visibility: visible;
+        opacity: .3;
+    }
+
+    /* .list_load_comic{
+        left: 10%;
+        width: 100%;
+    } */
+    #side-middle .function {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.3rem;
+    }
+}
