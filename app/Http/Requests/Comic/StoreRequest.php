@@ -48,13 +48,6 @@ class StoreRequest extends FormRequest
                 'nullable',
                 'max:255',
             ],
-            'name' => [
-                'bail',
-                'required',
-                'filled',
-                'string',
-                'max:255',
-            ],
             'language' => [
                 'bail',
                 'required',
