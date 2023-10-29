@@ -30,7 +30,7 @@
 <script type="module" src="{{ asset('js/reader/app.js') }}"></script>
 <script rel="text/javascript" src="{{ asset('js/vendor.min.js') }}"></script>
 <script rel="text/javascript" src="{{ asset('js/app.min.js') }}"></script>
-<script src="{{ asset('js/helper.js') }}"></script>
+<script src="{{ asset('js/helper.js') }}" type="module"></script>
 <script>
     $(window).click(function(e) {
         if (!$(e.target).closest('.user_login').length) {

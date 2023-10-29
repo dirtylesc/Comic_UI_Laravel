@@ -1,4 +1,4 @@
-import { PATH_API_CATEGORY, PATH_API_CHAPTER, PATH_API_COMIC } from "./constants/api.js";
+// import { PATH_API_CATEGORY, PATH_API_CHAPTER, PATH_API_COMIC } from "./constants.js";
 
 const showError = (obj, errors) => {
     let string = '<div class = "alert alert-danger mb-0 alert-dismissible fade show" role="alert"> <ol class = "mb-0 list-group list-group-numbered">';
@@ -13,7 +13,7 @@ const showError = (obj, errors) => {
     obj.html(string);
 }
 
-export const convertDateToDateTime = (date) => {
+const convertDateToDateTime = (date) => {
     var datetime = new Date(date).toLocaleString('vi-VN', {
         month: '2-digit',
         day: '2-digit',
@@ -138,7 +138,7 @@ const reqPathApi = (name) => {
     }
 }
 
-export const reqObjectFromFormData = (formData) => {
+const reqObjectFromFormData = (formData) => {
     var object = {};
     formData.forEach((value, key) => {
         // Reflect.has in favor of: object.hasOwnProperty(key)

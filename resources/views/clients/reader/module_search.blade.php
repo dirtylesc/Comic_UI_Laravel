@@ -1,4 +1,4 @@
-<script src="{{ asset('js/helper.js') }}"></script>
+<script src="{{ asset('js/helper.js') }}" type="module"></script>
 <script>
     const search = (val) => {
         $.ajax({

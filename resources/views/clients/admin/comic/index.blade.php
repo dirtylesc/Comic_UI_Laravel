@@ -96,57 +96,6 @@
                 </tr>
             </thead>
             <tbody id="tbody-data">
-                <tr>
-                    <td>id</td>
-                    <td>
-                        <img width='85px' height='85px' class="bg-info rounded-circle" style="object-fit: cover"
-                            src="" />
-                    </td>
-                    <td class="col-3">
-                        <i class="fas fa-star fs12 _on"></i>
-                        <a href="${url}" class="fw700">
-                            each.name
-                        </a>
-                        each.alias ? ' - ' + each.alias : ''
-                        <br>
-                        Author: <strong>each.author</strong>
-                        <br>
-                        <div class="rate">rate (each.count_rate)</div>
-                    </td>
-                    <td class="col-1">
-                        <span class="badge bg-info">each.language</span>
-                    </td>
-                    <td class="col-2">
-                        <span class='text-ellipsis' style="-webkit-line-clamp: 3;">each.description</span>
-                    </td>
-                    <td>
-                        <div class="dropdown notification-list topbar-dropdown ps-0 max_content">
-                            <a class="nav-link dropdown-toggle arrow-none p-0 lh_0" data-toggle="dropdown"
-                                id="topbar-languagedrop" href="#" role="button" aria-haspopup="true"
-                                aria-expanded="false">
-                                <span class="badge ${bagde} status b_status cursor_pointer"
-                                    data-id=${each.id}>each.status_name</span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated topbar-dropdown-menu"
-                                style="right: 22% !important; min-width: 0; max-width: 100px;"
-                                aria-labelledby="topbar-languagedrop">
-                                <span class="badge ${addClassStatus(element.value)} cursor_pointer col-12"
-                                    onclick="changeStatus(${each.id}, ${each.status}, ${element.value}, '${element.text}')">
-                                    element.text
-                                </span>
-                            </div>
-                        </div>
-
-                        <span class="badge badge-danger status b_status cursor_pointer" onclick=changeStatus(${each.id})
-                            data-id=each.id>Pending</span>
-                    </td>
-                    <td>
-                        created_at
-                    </td>
-                    <td class="col-1">
-                        action
-                    </td>
-                </tr>
             </tbody>
         </table>
         <div class="modal" id="modal-privew-chapter" tabindex="-1" role="dialog">
@@ -163,14 +112,22 @@
     </div>
 @endsection
 @push('js')
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="{{ asset('js/admin/comic/index.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"
+        integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script id="my-template" type="text/x-handlebars-template">
+        
+    </script>
+    <script src="{{ asset('js/admin/comic/index.js') }}" type="module"></script>
     @if (isSuperAdmin())
-        <script>
+        <script type="module">
             showDataTable(1);
         </script>
     @else
-        <script>
+        <script type="module">
+            import {
+                showDataTable
+            } from '{{ asset('js/admin/comic/index.js') }}'
             showDataTable(0);
         </script>
     @endif

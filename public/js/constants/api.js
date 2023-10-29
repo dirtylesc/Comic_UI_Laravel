@@ -1,5 +1,6 @@
 //-------------------------PATH_API-----------------------------------
-const BASE_API               = "http://localhost:8080"
+const BASE_API                      = "http://localhost:8080"
+export const BASE_URL_UI            = "https://web-truyen-tranh_ui.com"
 
 export const PATH_API_PRIV          = BASE_API + "/priv";
 export const PATH_API_PUBL          = BASE_API + "/publ";
@@ -18,17 +19,16 @@ export const PATH_API_CATEGORY      = "/categories";
 
 //---------------------------------------------------------------------
 
-export const PATH_API_CHECK_SLUG    = "/check_slug";
-
-//---------------------------------------------------------------------
-
 export const PATH_API_TRANSLATOR    = PATH_API_USER + "/translators";
 
 //---------------------------------------------------------------------
 
 export const PATH_API_STORE         = "/store";
+export const PATH_API_EDIT          = "/edit";
 export const PATH_API_UPDATE        = "/update";
 export const PATH_API_DESTROY       = "/destroy";
+
+export const PATH_API_CHECK_SLUG    = "/check_slug";
 export const PATH_APT_VIEW          = "/vi"
 
 //-------------------------API_RESPONSE--------------------------------

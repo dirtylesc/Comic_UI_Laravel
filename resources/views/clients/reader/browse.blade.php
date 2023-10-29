@@ -92,7 +92,7 @@
 @endsection
 @push('js')
     <script type="module" src="{{ asset('js/reader/browse.js') }}"></script>
-    <script type="module" src="{{ asset('js/helper.js') }}"></script>
+    <script type="module" src="{{ asset('js/helper.js') }}" type="module"></script>
     <script>
         const addToLibrary = (e, comicId, text) => {
             $.ajax({

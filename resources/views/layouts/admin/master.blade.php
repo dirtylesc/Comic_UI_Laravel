@@ -75,6 +75,7 @@
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script rel="text/javascript" src="{{ asset('js/vendor.min.js') }}"></script>
 <script rel="text/javascript" src="{{ asset('js/app.min.js') }}"></script>
+<script rel="text/javascript" src="{{ asset('js/constants/api.js') }}" type="module"></script>
 <script rel="text/javascript" src="{{ asset('js/helper.js') }}" type="module"></script>
 @stack('js')
 

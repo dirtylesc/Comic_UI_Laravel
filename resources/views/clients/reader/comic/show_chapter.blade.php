@@ -132,7 +132,7 @@
         </div>
     </div>
 </body>
-<script src="{{ asset('js/helper.js') }}"></script>
+<script src="{{ asset('js/helper.js') }}" type="module"></script>
 <script src="{{ asset('js/reader/login_register.js') }}"></script>
 <script type="module" src="{{ asset('js/reader/app_comic.js') }}"></script>
 <script>
